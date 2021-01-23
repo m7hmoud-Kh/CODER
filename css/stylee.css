@@ -1,0 +1,852 @@
+/*
+*** template     : CODER
+*** created in   : 1/7/2020
+*** created with : mahmoud khairy
+*/
+:root
+{
+    --main-color:#ec3237;
+    --sec-color:#808080;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* start in header*/
+header .content 
+{
+    background-color: #1a1a1a;
+
+}
+header .logo  img
+{
+   width: 20%;
+}
+header .logo span
+{
+    color: #fff;
+    margin-left: 2%;
+    font-size: 21px;
+}
+.content 
+{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.content ul
+{
+    margin-top:1.8%;
+    text-align: center;
+    
+}
+.content ul li 
+{
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 3%;
+    transition: all 0.54s ease-in-out;
+}
+.content ul li:hover 
+{
+   color: var(--main-color);
+   cursor: pointer;
+   
+}
+.content .bar
+{
+    text-align: center;
+    padding-top: 1%;   
+    display: none;
+}
+.content .bar i 
+{
+    color: #fff;
+    font-size: 38px;
+    position: absolute;
+    left: 80%;
+    top: 0.1%;
+    cursor: pointer;
+}
+@media(max-width:767px)
+{
+    .content 
+    {
+        position: static ;
+    }
+    .content ul
+    {
+        display: none;
+    }
+    .content .bar
+    {
+        display:inline-block;
+    }
+    .bar .none 
+    {
+        display:inline-block;
+        background-color: var(--main-color);
+        width: 200%;
+        margin-left: 375%;
+        margin-top: -51%;
+        position: relative;
+        display: none;
+        border: 3px solid #fff;
+        box-shadow: 10px 10px 93px 12px #d5d5d5;
+    }
+    .bar .none li 
+    {
+        display: block;
+        margin-bottom: 1.5%;
+        text-indent: 15px;
+        color:#fff;
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.45s ease-in-out;
+    }
+    .bar .none li:hover 
+    {
+       transform: translateX(3px);
+       color: #000;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .content 
+    {
+        position: static ;
+    }
+    .content ul
+    {
+        display: none;
+    }
+    .content .bar
+    {
+        display:inline-block;
+    }
+    .bar .none 
+    {
+        display:inline-block;
+        background-color: var(--main-color);
+        width: 200%;
+        margin-left: 527%;
+        margin-top: -73%;
+        position: relative;
+        display: none;
+        border: 3px solid #fff;
+        box-shadow: 10px 10px 93px 12px #d5d5d5;
+    }
+    .bar .none::before
+    {
+        content: "";
+        border-style: solid;
+        border-width: 16px;
+        border-color: transparent transparent var(--main-color) transparent;
+        position: absolute;
+        top: -24%;
+        left: 50%;
+    }
+    .bar .none li 
+    {
+        display: block;
+        margin-bottom: 1.5%;
+        text-indent: 15px;
+        color:#fff;
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.45s ease-in-out;
+    }
+    .bar .none li:hover 
+    {
+       transform: translateX(3px);
+       color: #000;
+    }
+}
+header .back 
+{
+    background-image: url(../image/pic1.jpg);
+    background-size: cover;
+    position: relative;
+}
+header .back .overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    opacity: 0.6;
+    z-index: 1;
+}
+.back .cap 
+{
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-35%)
+}
+.back .cap h1 
+{
+    font-weight: 900;
+}
+.back .cap p
+{
+    font-size: 22px;
+}
+.back .cap button
+{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color:#fff;
+    padding: 1%;
+    width: 25%;
+    text-transform: uppercase;
+}
+@media(max-width:767px)
+{
+    .back .cap button
+    {
+        width: 30%;
+    }
+}
+.back .cap button:hover 
+{
+    color:var(--main-color);
+    background-color: #fff;
+}
+/*end in header*/
+/*start about me*/
+.sec1
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.sec1 h1
+{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+}
+.sec1 p 
+{ 
+    color: var(--sec-color);
+    padding: 0.5%;
+}
+@media(min-width:992px) and (max-width:1199px)
+{
+   .sec1 .girle 
+   {
+       max-width: 100%;
+       text-align: center;
+       margin-left: 25%;
+   }
+}
+.sec1 .talk .title 
+{
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: capitalize;
+    padding-bottom: 1%;
+}
+@media(max-width:767px)
+{
+    .sec1 .talk .title 
+    {
+        padding-top: 1%;
+        text-align: center;
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec1 .talk .title 
+    {
+        padding-top: 1%;
+        text-align: center;
+    }
+}
+@media(min-width:992px) and (max-width:1199px)
+{
+    .sec1 .talk
+    {
+       margin-top: 2%;
+       font-size: 21px;
+       flex: 0 0 100%;
+        max-width: 100%;
+
+    } 
+    .sec1 .talk .title 
+    {
+        padding-top: 1%;
+        text-align: center;
+       
+    }
+}
+.sec1 .talk span
+{
+   display: block; 
+   padding-bottom: 2%;
+}
+
+.sec1 .talk .soc i 
+{
+    padding: 2%;
+    margin-top: 8%;
+    border: 1px solid var(--sec-color);
+    color: var(--sec-color);
+    font-size: 25px;
+    transition: all 0.45s ease-in-out;
+    cursor: pointer;
+}
+.sec1 .talk .soc i:not(:first-of-type)
+{
+    margin-left: 2%;
+}
+.sec1 .talk .soc i:hover 
+{
+    background-color:var(--main-color);
+    color: #fff;
+}
+.sec1 .skills,
+.sec1 .precent
+{
+    padding-top: 20%;
+}
+@media(min-width:992px) and (max-width:1199px)
+{
+    .sec1 .skills,
+    .sec1 .precent
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 10%;
+    }
+}
+.sec1 .skills h1
+{
+    font-weight:bold;   
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec1 .skills h1
+    {
+        text-align: center;
+        padding-bottom: 10px;  
+    }
+}
+.sec1 .skills p 
+{
+    color: var(--sec-color);
+    padding-bottom: 0.5%;
+}
+.sec1 .precent .psd span,
+.sec1 .precent .HTML span,
+.sec1 .precent .JAVASCRIPT span,
+.sec1 .precent .WORDPRESS span
+{
+    color: var(--sec-color);
+    margin-bottom: 2%;
+    display: inline-block;
+}
+.sec1 .precent .psd span:not(:first-of-type)
+{
+    margin-left: 70%;
+}
+.sec1 .precent .HTML span:not(:first-of-type)
+{
+    margin-left: 76%;
+}
+.sec1 .precent .JAVASCRIPT span:not(:first-of-type)
+{
+    margin-left: 75%;
+}
+.sec1 .precent .WORDPRESS span:not(:first-of-type)
+{
+    margin-left: 74%;
+}
+.sec1 .precent .psd .pro,
+.sec1 .precent .HTML .pro,
+.sec1 .precent .JAVASCRIPT .pro,
+.sec1 .precent .WORDPRESS .pro 
+{
+    position: relative;
+    background-color: #e9ecef;
+    height: 20px;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.sec1 .precent .psd .pro span,
+.sec1 .precent .HTML .pro span,
+.sec1 .precent .JAVASCRIPT .pro span,
+.sec1 .precent .WORDPRESS .pro span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--main-color);
+}
+@media(max-width:767px)
+{
+    .sec1 .precent .psd ,
+    .sec1 .precent .HTML ,
+    .sec1 .precent .JAVASCRIPT,
+    .sec1 .precent .WORDPRESS
+    {
+        margin: 3% 0 3% ;
+    } 
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec1 .precent .psd ,
+    .sec1 .precent .HTML ,
+    .sec1 .precent .JAVASCRIPT,
+    .sec1 .precent .WORDPRESS
+    {
+        margin: 3% 0 3% ;
+    } 
+}
+
+.sec1 .ser
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    padding: 0.5%;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+/*end about me*/
+/*start work*/
+.sec2 
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f5f5f5;
+}
+.sec2 h1
+{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.sec2 p
+{
+    text-align: center;
+    color: var(--sec-color);
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.sec2 .sket
+{
+    background-color: #fff;
+    margin-bottom: 1%;
+    text-align: center;
+    max-width: 31.333%;
+    margin-left: 2%;
+}
+@media(max-width:767px)
+{
+    .sec2 .sket
+    {
+       max-width:100%;
+        
+    }
+}
+@media(min-width:768px) and (max-width:991px)
+{
+    .sec2 .sket
+    {
+        max-width: 48%;
+    }
+}
+@media(min-width:992px) and (max-width:1199px)
+{
+    .sec2 .sket
+    {
+        max-width: 48%;
+        text-align: center;
+        margin-left: 11%;
+    }
+}
+.sec2 .sket .icon 
+{
+ background-color: #eeeeee;
+ text-align: center;
+ width:50px;
+ position: relative;
+ left: 50%;
+ transform: translateX(-50%);
+ margin-top: 20px;
+ padding: 5px;
+ transition: all 0.45s ease-in-out;
+}
+.sec2 .sket .icon i 
+{
+    color: var(--sec-color) ;
+    text-align: center;
+}
+.sec2 .sket:hover .icon
+{
+    background-color: var(--main-color);
+}
+.sec2 .sket:hover .icon i 
+{
+    color: #fff;
+}
+.sec2 .sket h3 
+{
+    text-align: center;
+    color: var(--sec-color);
+    padding-top: 20px;
+    transition: all 0.45s ease-in-out;
+    font-size: 25px;
+
+}
+.sec2 .sket:hover h3 
+{
+    color:var(--main-color);
+}
+.sec2 .sket p 
+{
+    color: var(--sec-color);
+    line-height: 1.7;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sec2 .chec
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    padding: 0.5%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    margin-bottom: 80px;
+}
+.sec2 .static
+{
+    background-image:url(../image/static.jpg);
+    background-size:cover;
+    position: relative;
+}
+.sec2  .overlay 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+ .static .desin
+ {
+     background-color: transparent;
+     border: 1px solid var(--sec-color);
+     max-width:23%;
+     margin: 13% 2% 3% 0;
+ }
+ @media(max-width:767px)
+ {
+    .static .desin
+    {
+        max-width: 100%;
+        margin-top: 4%;
+    }
+    .static .desin:last-of-type
+    {
+        margin-bottom: 5%;
+
+    }
+ }
+ @media(min-width:768px) and (max-width:991px) 
+ {
+    .static .desin
+    {
+        max-width: 48%;
+        margin-top: 4%;
+    }
+ }
+ .static .desin .awos 
+ {
+     text-align: center;
+     margin-top: 15px;
+ }
+ .static .desin .awos i 
+ {
+     color: var(--main-color);
+     font-size: 30px;
+ }
+ .static .desin div:last-of-type
+ {
+     color: #fff;
+     font-size: 40px;
+     font-weight: bold;
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ .static .desin p 
+ {
+     color: var(--main-color);
+     font-size: 25px;
+ }
+/*end work*/
+/*start portfolio*/
+.sec3 
+{
+    padding-top: 30px;
+    background-color: #f5f5f5;
+}
+.sec3 h1 
+{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.sec3 p 
+{
+    text-align: center;
+    color: var(--sec-color);
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+@media(max-width:767px)
+{
+    .sec3 .image
+    {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+}
+@media(min-width:768px) and (max-width:991px) 
+{
+    .sec3 .image
+    {
+        max-width: 48%;
+        text-align: center;
+        margin-left: 2%;
+    }
+}
+@media(min-width:992px) and (max-width:1199px)
+ {
+    .sec3 .image
+    {
+        max-width: 48%;
+        text-align: center;
+        margin-left: 2%;
+    }
+ }
+.sec3 .image img 
+{
+    padding: 3px;
+    background-color: #000;
+}
+.sec3 .image h4 
+{
+    text-align: center;
+    padding-top: 2px;
+}
+.sec3 .chec 
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    padding: 0.5%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    margin-bottom: 50px;
+}
+/* end portfolio*/
+/*start  hire me*/
+.sec4 
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sec4 h1 
+{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.sec4 p 
+{
+    text-align: center;
+    color: var(--sec-color);
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.sec4 .cont h4 
+{
+    color: #000;
+}
+.sec4 .cont p 
+{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sec4 .cont .loc i,
+.sec4 .cont .email i,
+.sec4 .cont .tell i 
+{
+    color: var(--sec-color);
+    font-size: 20px;
+}
+.sec4 .cont .loc span,
+.sec4 .cont .email span,
+.sec4 .cont .tell span
+{
+    margin-left: 20px;
+    color: var(--sec-color);
+    padding-top: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+    transition: all 0.45s ease-in-out;
+}
+.sec4 .cont .email span:hover 
+{
+   transform: translatex(3px);
+   color:var(--main-color);
+   cursor: pointer;
+}
+@media(max-width:767px)
+{
+    .sec4 .cont .soc
+    {
+        margin-bottom: 3.5%;
+        text-align: center;
+    }
+}
+@media(min-width:768px) and (max-width:991px) 
+{
+    
+    .sec4 .cont .soc
+    {
+        margin-bottom: 3.5%;
+        text-align: center;
+    }
+}
+.sec4 .cont .soc i 
+{
+    padding: 2%;
+    margin-top: 8%;
+    border: 1px solid var(--sec-color);
+    color: var(--sec-color);
+    font-size: 25px;
+    transition: all 0.45s ease-in-out;
+    cursor: pointer;
+}
+.sec4 .cont .soc i:not(:first-of-type)
+{
+    margin-left: 2%;
+}
+.sec4 .cont .soc i:hover 
+{
+    background-color:var(--main-color);
+    color: #fff;
+}
+.sec4 form input:not(:last-of-type),
+.sec4 form textarea
+{
+    display: block;
+    margin-bottom: 3%;
+    padding: 1.5%;
+    width: 80%;
+    border: 1px solid var(--sec-color);
+}
+.sec4 form input:not(:last-of-type)::placeholder
+{
+    text-transform: capitalize;
+}
+.sec4 form input:last-of-type
+{
+    
+    margin-top: 2%;
+    padding: 1%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+@media(max-width:767px)
+{
+    .sec4 form
+    {
+        text-align: center;
+    }
+    .sec4 form input,
+    .sec4 form textarea
+    {
+        margin-left: 11%;
+    }
+}
+@media(min-width:768px) and (max-width:991px) 
+{
+    .sec4 form
+    {
+        text-align: center;
+    }
+    .sec4 form input,
+    .sec4 form textarea
+    {
+        margin-left: 11%;
+    }
+}
+/* end  hire me*/
+/*start footer*/
+.foot
+{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+  padding: 5px;
+}
+/*end footer*/
+/* start scrolltop*/
+.scroll
+{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+.scroll i 
+{
+    color: #fff;
+    text-align: center;
+    margin-left: 8px;
+}
+/*end scrolltop*/
+
